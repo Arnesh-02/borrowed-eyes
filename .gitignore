@@ -31,7 +31,16 @@ yarn-error.*
 *.pem
 
 # local env files
+.env
 .env*.local
+
+# Private AI inputs and large local model artifacts (not bundled music)
+/models/
+/recordings/
+/private/
+*.gguf
+*.ggml
+ggml-*.bin
 
 # typescript
 *.tsbuildinfo
@@ -39,3 +48,6 @@ yarn-error.*
 # generated native folders
 /ios
 /android
+
+.claude/
+.vscode/

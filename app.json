@@ -20,6 +20,18 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      ["expo-audio", {
+        "microphonePermission": "Allow Borrowed Eyes to listen to your observation only while you hold the voice button.",
+        "recordAudioAndroid": true,
+        "enableBackgroundPlayback": false,
+        "enableBackgroundRecording": false
+      }],
+      "expo-router",
+      "expo-asset",
+      "./plugins/withDevInference"
+    ],
+    "scheme": "borrowed-eyes"
   }
 }
